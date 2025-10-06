@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+    <!-- Basic Meta -->
+    <title>Soniya Akter Sadiya | SEO Expert & Web Developer</title>
+    <meta name="description" content="Soniya Akter Sadiya is a professional SEO Expert and Web Developer specializing in SEO optimization, HTML, CSS3, JavaScript, jQuery, and Bootstrap. Explore her portfolio, resume, testimonials, and latest news.">
+    <meta name="keywords" content="Soniya Akter Sadiya, SEO Expert, Web Developer, HTML, CSS3, JavaScript, jQuery, Bootstrap, Portfolio, Resume, Testimonials, News">
+    <meta name="author" content="Soniya Akter Sadiya">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Soniya Akter Sadiya | SEO Expert & Web Developer">
+    <meta property="og:description" content="Explore the professional portfolio of Soniya Akter Sadiya, an expert SEO specialist and web developer.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-website-url.com">
+    <meta property="og:image" content="https://your-website-url.com/og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Soniya Akter Sadiya | SEO Expert & Web Developer">
+    <meta name="twitter:description" content="Explore the professional portfolio of Soniya Akter Sadiya, an expert SEO specialist and web developer.">
+    <meta name="twitter:image" content="https://your-website-url.com/og-image.jpg">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #667eea;
+            --secondary-color: #764ba2;
+            --dark-color: #2c3e50;
+            --light-color: #f8f9fa;
+            --accent-color: #ff6b6b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            padding: 1rem 0;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            padding: 0.5rem 0;
+        }
+
+        .navbar-brand {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: rgba(255,255,255,0.9) !important;
+            margin: 0 0.5rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .navbar-nav .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background: white;
+            transition: width 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover::after,
+        .navbar-nav .nav-link.active::after {
+            width: 80%;
+        }
+
+        .navbar-toggler {
+            border-color: white;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 150px 0 100px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>');
+            animation: float 20s linear infinite;
+            opacity: 0.5;
+        }
+
+        @keyframes float {
+            from { transform: translateY(0); }
+            to { transform: translateY(-100px); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            animation: fadeInUp 1s ease;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: rgba(255,255,255,0.95);
+        }
+
+        .hero-description {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons .btn {
+            margin: 0.5rem;
+            padding: 0.8rem 2rem;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-light {
+            color: var(--primary-color);
+        }
+
+        .btn-light:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .btn-outline-light:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .social-links {
+            margin-top: 2rem;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 0.8rem;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .social-links a:hover {
+            transform: translateY(-5px) scale(1.2);
+        }
+
+        /* Section Styling */
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: var(--dark-color);
+            position: relative;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            border-radius: 2px;
+        }
+
+        /* About Section */
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+        }
+
+        .about-image {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 8rem;
+            color: white;
+            box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .skill-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .skill-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+        }
+
+        .skill-item i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .skill-item h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--dark-color);
+        }
+
+        /* Resume Section */
+        .resume-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--primary-color);
+            transition: all 0.3s ease;
+        }
+
+        .resume-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+        }
+
+        .resume-item h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .resume-item .date {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .resume-item .location {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Portfolio Section */
+        #portfolio {
+            background: var(--light-color);
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .portfolio-item {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.3);
+        }
+
+        .portfolio-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: white;
+        }
+
+        .portfolio-content {
+            padding: 1.5rem;
+        }
+
+        .portfolio-content h4 {
+            color: var(--dark-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .portfolio-content p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .portfolio-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .portfolio-link:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Testimonials Section */
+        .testimonial-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 5rem;
+            color: var(--primary-color);
+            opacity: 0.1;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .author-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+            font-weight: 600;
+        }
+
+        .author-info h5 {
+            margin-bottom: 0.2rem;
+            color: var(--dark-color);
+        }
+
+        .author-info p {
+            margin: 0;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .rating {
+            color: #ffc107;
+            margin-top: 0.5rem;
+        }
+
+        /* News Section */
+        #news {
+            background: var(--light-color);
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .news-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .news-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.3);
+        }
+
+        .news-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: white;
+        }
+
+        .news-content {
+            padding: 1.5rem;
+        }
+
+        .news-date {
+            color: var(--primary-color);
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .news-content h4 {
+            color: var(--dark-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .news-content p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .read-more {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .read-more:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--dark-color);
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+
+        .footer-content {
+            text-align: center;
+        }
+
+        .footer h4 {
+            margin-bottom: 1rem;
+        }
+
+        .footer-social {
+            margin: 1.5rem 0;
+        }
+
+        .footer-social a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 1rem;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .footer-social a:hover {
+            color: var(--primary-color);
+            transform: scale(1.2);
+        }
+
+        .copyright {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.6);
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+
+            .about-content {
+                flex-direction: column;
+            }
+
+            .about-image {
+                width: 200px;
+                height: 200px;
+                font-size: 5rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+
+        /* Scroll to top button */
+        #scrollTopBtn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            z-index: 999;
+        }
+
+        #scrollTopBtn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Soniya Akter Sadiya</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#news">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content text-center">
+                <h1 class="hero-title">Soniya Akter Sadiya</h1>
+                <p class="hero-subtitle">SEO Expert & Digital Marketing Specialist</p>
+                <p class="hero-description">Helping businesses achieve top rankings and drive organic traffic through strategic SEO solutions and data-driven digital marketing strategies.</p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-light">View My Work</a>
+                    <a href="#about" class="btn btn-outline-light">Learn More</a>
+                </div>
+                <div class="social-links">
+                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">SEO Specialist | Digital Marketer | Growth Strategist</p>
+            
+            <div class="row">
+                <div class="col-lg-4 text-center mb-4">
+                    <div class="about-image mx-auto">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <p>Hello! I'm Soniya Akter Sadiya, a passionate SEO Expert with extensive experience in helping businesses achieve their digital marketing goals. With a deep understanding of search engine algorithms and user behavior, I specialize in creating comprehensive SEO strategies that deliver measurable results.</p>
+                    
+                    <p>My expertise spans across technical SEO, on-page optimization, content strategy, link building, and local SEO. I stay updated with the latest industry trends and algorithm changes to ensure my clients always stay ahead of the competition.</p>
+                    
+                    <p>Over the years, I've successfully helped numerous businesses increase their organic visibility, drive quality traffic, and achieve sustainable growth through strategic SEO implementations and data-driven marketing approaches.</p>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <p><strong><i class="fas fa-envelope me-2 text-primary"></i> Email:</strong> soniya@example.com</p>
+                            <p><strong><i class="fas fa-phone me-2 text-primary"></i> Phone:</strong> +880 1234-567890</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p><strong><i class="fas fa-map-marker-alt me-2 text-primary"></i> Location:</strong> Dhaka, Bangladesh</p>
+                            <p><strong><i class="fas fa-briefcase me-2 text-primary"></i> Experience:</strong> 5+ Years</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-grid mt-5">
+                <div class="skill-item fade-in">
+                    <i class="fas fa-search"></i>
+                    <h4>SEO Strategy</h4>
+                    <p>Comprehensive SEO audits and strategic planning for maximum visibility</p>
+                </div>
+                <div class="skill-item fade-in">
+                    <i class="fas fa-chart-line"></i>
+                    <h4>Analytics & Reporting</h4>
+                    <p>Data-driven insights and performance tracking for continuous improvement</p>
+                </div>
+                <div class="skill-item fade-in">
+                    <i class="fas fa-code"></i>
+                    <h4>Technical SEO</h4>
+                    <p>Website optimization, site speed, mobile-friendliness, and structured data</p>
+                </div>
+                <div class="skill-item fade-in">
+                    <i class="fas fa-pen-fancy"></i>
+                    <h4>Content Strategy</h4>
+                    <p>SEO-optimized content creation and keyword research for target audiences</p>
+                </div>
+                <div class="skill-item fade-in">
+                    <i class="fas fa-link"></i>
+                    <h4>Link Building</h4>
+                    <p>Quality backlink acquisition and digital PR strategies</p>
+                </div>
+                <div class="skill-item fade-in">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h4>Local SEO</h4>
+                    <p>Google My Business optimization and local search strategies</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section" style="background: var(--light-color);">
+        <div class="container">
+            <h2 class="section-title">Resume</h2>
+            <p class="section-subtitle">Education, Experience & Certifications</p>
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 class="mb-4"><i class="fas fa-graduation-cap me-2 text-primary"></i>Education</h3>
+                    
+                    <div class="resume-item fade-in">
+                        <h4>Master's in Digital Marketing</h4>
+                        <p class="date"><i class="far fa-calendar-alt me-2"></i>2018 - 2020</p>
+                        <p class="location"><i class="fas fa-map-marker-alt me-2"></i>University of Dhaka</p>
+                        <p>Specialized in digital marketing strategies, SEO, social media marketing, and analytics. Graduated with distinction.</p>
+                    </div>
+                    
+                    <div class="resume-item fade-in">
+                        <h4>Bachelor's in Computer Science</h4>
+                        <p class="date"><i class="far fa-calendar-alt me-2"></i>2014 - 2018</p>
+                        <p class="location"><i class="fas fa-map-marker-alt me-2"></i>BUET, Dhaka</p>
+                        <p>Focused on web development, programming, and information systems. Built strong technical foundation.</p>
+                    </div>
+
+                    <h3 class="mb-4 mt-5"><i class="fas fa-certificate me-2 text-primary"></i>Certifications</h3>
+                    
+                    <div class="resume-item fade-in">
+                        <h4>Google Analytics Certified</h4>
+                        <p class="date"><i class="far fa-calendar-alt me-2"></i>2023</p>
+                        <p>Advanced certification in Google Analytics 4</p>
+                    </div>
+                    
+                    <div class="resume-item fade-in">
+                        <h4>Advanced SEO Certification</h4>
+                        <p class="date"><i class="far fa-calendar-alt me-2"></i>2022</p>
+                        <p>Moz Academy - Advanced SEO techniques and strategies</p>
+                    </div>
+                    
+                    <div class="resume-item fade-in">
+                        <h4>Content Marketing Certification</h4>
+                        <p class="date"><i class="far fa-calendar-alt me-2"></i>2021</p>
+                        <p>HubSpot Academy - Content strategy and inbound marketing</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <h3 class="mb-4"><i class="fas fa-briefcase me-2 text-primary"></i>Experience</h3>
+                    
+                    <div class="resume-item fade-in">
+                        <h4>Senior SEO Specialist</h4>
+                        <p class="date"><i class="far fa-calendar-alt me-2"></i>2021 - Present</p>
+                        <p class="location"><i class="fas fa-building me-2"></i>Digital Growth Agency</p>
+                        <ul>
+                            <li>Leading SEO strategies for 20+ clients across various industries</li>
+                            <li>Achieved average 150% increase in organic traffic</li>
+                            <li>Managed team of 5 SEO specialists and content creators</li>
+                            <li>Implemented technical SEO audits and improvements</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="resume-item fade-in">
+                        <h4>SEO Specialist</h4>
+                        <p class="date"><i class="far fa-calendar-alt me-2"></i>2019 - 2021</p>
+                        <p class="location"><i class="fas fa-building me-2"></i>TechSolutions Ltd.</p>
+                        <ul>
+                            <li>Conducted comprehensive SEO audits and competitor analysis</li>
+                            <li>Developed and executed content marketing strategies</li>
+                            <li>Improved website rankings for high-value keywords</li>
+                            <li>Managed local SEO campaigns for multiple locations</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="resume-item fade-in">
+                        <h4>Junior Digital Marketing Associate</h4>
+                        <p class="date"><i class="far fa-calendar-alt me-2"></i>2018 - 2019</p>
+                        <p class="location"><i class="fas fa-building me-2"></i>StartUp Marketing Hub</p>
+                        <ul>
+                            <li>Assisted in SEO campaigns and social media marketing</li>
+                            <li>Conducted keyword research and on-page optimization</li>
+                            <li>Created SEO-friendly content for blogs and websites</li>
+                            <li>Monitored analytics and prepared performance reports</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <p class="section-subtitle">Recent Projects & Success Stories</p>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item fade-in">
+                    <div class="portfolio-image">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h4>E-Commerce SEO Campaign</h4>
+                        <p>Increased organic traffic by 200% and revenue by 150% for a leading online store through comprehensive SEO strategy.</p>
+                        <a href="#" class="portfolio-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item fade-in">
+                    <div class="portfolio-image">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h4>Healthcare Local SEO</h4>
+                        <p>Achieved #1 rankings for multiple high-value keywords and increased patient inquiries by 180% for medical practice.</p>
+                        <a href="#" class="portfolio-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item fade-in">
+                    <div class="portfolio-image">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h4>B2B SaaS SEO Strategy</h4>
+                        <p>Generated 300+ qualified leads monthly through targeted content strategy and technical SEO improvements.</p>
+                        <a href="#" class="portfolio-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item fade-in">
+                    <div class="portfolio-image">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h4>Restaurant Multi-Location SEO</h4>
+                        <p>Optimized 15 restaurant locations with local SEO, resulting in 250% increase in foot traffic and online orders.</p>
+                        <a href="#" class="portfolio-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item fade-in">
+                    <div class="portfolio-image">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h4>Real Estate SEO Optimization</h4>
+                        <p>Dominated local search results for competitive real estate market, generating 500+ monthly inquiries.</p>
+                        <a href="#" class="portfolio-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item fade-in">
+                    <div class="portfolio-image">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h4>Education Portal SEO</h4>
+                        <p>Increased student enrollments by 175% through targeted SEO and content marketing for online education platform.</p>
+                        <a href="#" class="portfolio-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section" style="background: var(--light-color);">
+        <div class="container">
+            <h2 class="section-title">Testimonials</h2>
+            <p class="section-subtitle">What Clients Say About My Work</p>
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="testimonial-card fade-in">
+                        <p class="testimonial-text">"Soniya transformed our online presence completely. Our organic traffic has tripled, and we're now ranking #1 for our most important keywords. Her expertise and dedication are unmatched!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">JD</div>
+                            <div class="author-info">
+                                <h5>John Davis</h5>
+                                <p>CEO, TechStart Solutions</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="testimonial-card fade-in">
+                        <p class="testimonial-text">"Working with Soniya was a game-changer for our business. She not only improved our rankings but also helped us understand the importance of SEO strategy. Highly recommend!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">SR</div>
+                            <div class="author-info">
+                                <h5>Sarah Rahman</h5>
+                                <p>Marketing Director, Fashion Hub</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="testimonial-card fade-in">
+                        <p class="testimonial-text">"Soniya's technical SEO expertise helped us fix critical issues we didn't even know existed. Our site speed improved dramatically, and so did our search rankings. Excellent work!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">MA</div>
+                            <div class="author-info">
+                                <h5>Michael Anderson</h5>
+                                <p>Founder, Digital Ventures</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="testimonial-card fade-in">
+                        <p class="testimonial-text">"Professional, knowledgeable, and results-driven. Soniya helped us achieve first-page rankings in a highly competitive industry. Our ROI has been incredible!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">LT</div>
+                            <div class="author-info">
+                                <h5>Lisa Thompson</h5>
+                                <p>Owner, Wellness Center</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="section">
+        <div class="container">
+            <h2 class="section-title">Latest News</h2>
+            <p class="section-subtitle">Updates, Blog Posts & Industry Insights</p>
+            
+            <div class="news-grid">
+                <div class="news-card fade-in">
+                    <div class="news-image">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="news-content">
+                        <p class="news-date"><i class="far fa-calendar me-2"></i>October 1, 2025</p>
+                        <h4>AI and the Future of SEO</h4>
+                        <p>Exploring how artificial intelligence is reshaping search engine optimization strategies and what it means for digital marketers...</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="news-card fade-in">
+                    <div class="news-image">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="news-content">
+                        <p class="news-date"><i class="far fa-calendar me-2"></i>September 25, 2025</p>
+                        <h4>Mobile-First Indexing Best Practices</h4>
+                        <p>Essential strategies for optimizing your website for mobile-first indexing in 2025 and beyond...</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="news-card fade-in">
+                    <div class="news-image">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="news-content">
+                        <p class="news-date"><i class="far fa-calendar me-2"></i>September 18, 2025</p>
+                        <h4>Core Web Vitals Update Guide</h4>
+                        <p>A comprehensive guide to understanding and improving your website's Core Web Vitals for better SEO performance...</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="news-card fade-in">
+                    <div class="news-image">
+                        <i class="fas fa-pen"></i>
+                    </div>
+                    <div class="news-content">
+                        <p class="news-date"><i class="far fa-calendar me-2"></i>September 10, 2025</p>
+                        <h4>Content Strategy for 2025</h4>
+                        <p>Discover the latest content marketing trends and strategies that will dominate search results in the coming year...</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="news-card fade-in">
+                    <div class="news-image">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <div class="news-content">
+                        <p class="news-date"><i class="far fa-calendar me-2"></i>September 3, 2025</p>
+                        <h4>Link Building in Modern SEO</h4>
+                        <p>Effective link building strategies that work in today's SEO landscape, focusing on quality over quantity...</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="news-card fade-in">
+                    <div class="news-image">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="news-content">
+                        <p class="news-date"><i class="far fa-calendar me-2"></i>August 28, 2025</p>
+                        <h4>Local SEO Success Stories</h4>
+                        <p>Real-world case studies showcasing how local businesses achieved remarkable growth through targeted local SEO...</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h4>Let's Work Together</h4>
+                <p>Ready to boost your online presence? Let's discuss how I can help your business grow.</p>
+                <div class="footer-social">
+                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" title="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p><i class="fas fa-envelope me-2"></i> soniya@example.com</p>
+                <p><i class="fas fa-phone me-2"></i> +880 1234-567890</p>
+                <div class="copyright">
+                    <p>&copy; 2025 Soniya Akter Sadiya. All Rights Reserved.</p>
+                    <p>Built with HTML5, CSS3, JavaScript, jQuery & Bootstrap</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            // Smooth scrolling for navigation links
+            $('a[href^="#"]').on('click', function(e) {
+                e.preventDefault();
+                
+                var target = $(this.getAttribute('href'));
+                if(target.length) {
+                    $('html, body').stop().animate({
+                        scrollTop: target.offset().top - 70
+                    }, 1000);
+                    
+                    // Close mobile menu after clicking
+                    $('.navbar-collapse').collapse('hide');
+                }
+            });
+
+            // Active navigation highlighting
+            $(window).on('scroll', function() {
+                var scrollPos = $(window).scrollTop() + 100;
+                
+                $('.nav-link').each(function() {
+                    var currLink = $(this);
+                    var refElement = $(currLink.attr('href'));
+                    
+                    if(refElement.length) {
+                        if(refElement.offset().top <= scrollPos && refElement.offset().top + refElement.outerHeight() > scrollPos) {
+                            $('.nav-link').removeClass('active');
+                            currLink.addClass('active');
+                        }
+                    }
+                });
+
+                // Navbar scroll effect
+                if(scrollPos > 50) {
+                    $('.navbar').addClass('scrolled');
+                } else {
+                    $('.navbar').removeClass('scrolled');
+                }
+
+                // Show/hide scroll to top button
+                if(scrollPos > 300) {
+                    $('#scrollTopBtn').css('display', 'flex');
+                } else {
+                    $('#scrollTopBtn').hide();
+                }
+            });
+
+            // Scroll to top button
+            $('#scrollTopBtn').on('click', function() {
+                $('html, body').animate({scrollTop: 0}, 800);
+            });
+
+            // Fade-in animation on scroll
+            function checkFadeIn() {
+                $('.fade-in').each(function() {
+                    var elementTop = $(this).offset().top;
+                    var elementBottom = elementTop + $(this).outerHeight();
+                    var viewportTop = $(window).scrollTop();
+                    var viewportBottom = viewportTop + $(window).height();
+                    
+                    if(elementBottom > viewportTop && elementTop < viewportBottom) {
+                        $(this).addClass('visible');
+                    }
+                });
+            }
+
+            // Check on scroll
+            $(window).on('scroll', checkFadeIn);
+            
+            // Check on page load
+            checkFadeIn();
+
+            // Portfolio item click effect
+            $('.portfolio-item').on('click', function() {
+                $(this).css('transform', 'scale(0.95)');
+                setTimeout(() => {
+                    $(this).css('transform', '');
+                }, 200);
+            });
+
+            // News card hover effect
+            $('.news-card').hover(
+                function() {
+                    $(this).find('.news-image').css('transform', 'scale(1.1)');
+                },
+                function() {
+                    $(this).find('.news-image').css('transform', 'scale(1)');
+                }
+            );
+
+            // Add transition to news images
+            $('.news-image, .portfolio-image').css('transition', 'transform 0.3s ease');
+
+            // Testimonial card entrance animation
+            $('.testimonial-card').each(function(index) {
+                $(this).css({
+                    'animation-delay': (index * 0.2) + 's',
+                    'animation': 'fadeInUp 0.6s ease forwards'
+                });
+            });
+
+            // Service card stagger animation
+            $('.skill-item').each(function(index) {
+                $(this).css('animation-delay', (index * 0.1) + 's');
+            });
+
+            // Console log for debugging
+            console.log('Website loaded successfully!');
+            console.log('Built with: HTML5, CSS3, JavaScript, jQuery, Bootstrap');
+        });
+
+        // Vanilla JavaScript for additional interactivity
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add ripple effect to buttons
+            const buttons = document.querySelectorAll('.btn, .cta-button');
+            
+            buttons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    const ripple = document.createElement('span');
+                    const rect = this.getBoundingClientRect();
+                    const size = Math.max(rect.width, rect.height);
+                    const x = e.clientX - rect.left - size / 2;
+                    const y = e.clientY - rect.top - size / 2;
+                    
+                    ripple.style.width = ripple.style.height = size + 'px';
+                    ripple.style.left = x + 'px';
+                    ripple.style.top = y + 'px';
+                    ripple.classList.add('ripple');
+                    
+                    this.appendChild(ripple);
+                    
+                    setTimeout(() => {
+                        ripple.remove();
+                    }, 600);
+                });
+            });
+
+            // Parallax effect for hero section
+            window.addEventListener('scroll', function() {
+                const scrolled = window.pageYOffset;
+                const parallax = document.querySelector('.hero-section::before');
+                if(parallax) {
+                    const rate = scrolled * 0.5;
+                }
+            });
+        });
+    </script>
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Soniya Akter Sadiya",
+    "jobTitle": "SEO Expert & Web Developer",
+    "url": "https://your-website-url.com",
+    "sameAs": [
+    "https://www.facebook.com/sadiya.islam.431100",
+    "https://www.linkedin.com/in/your-linkedin",
+    "https://github.com/your-github"
+    ],
+    "image": "https://your-website-url.com/profile.jpg",
+    "description": "Soniya Akter Sadiya is a professional SEO Expert and Web Developer specializing in SEO optimization, HTML, CSS3, JavaScript, jQuery, and Bootstrap. Explore her portfolio, resume, testimonials, and latest news."
+    }
+    </script>
+</body>
+</html>
